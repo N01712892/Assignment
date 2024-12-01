@@ -1,3 +1,27 @@
 <html>
-    
+    <head>
+<title>button</title>
+<style>
+    #button {
+        padding: 16px 32px;
+        font-size: 13px;
+        border: none;
+        border-radius: 8px;
+    }
+</style>
+</head>
+<body>
+    <button id="button" onclick="Clicked()">Click ME!</button>
+<script>
+    function Clicked() {
+        alert("Button Clicked!");
+
+        const randomColour = `#${Math.floor(Math.random() * 16777216).toString(16)}`;
+        document.getElementById('button').style.backgroundColor = randomColour;
+    }
+</script>
+
+
+
+</body>
 </html>
