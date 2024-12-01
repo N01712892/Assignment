@@ -1,0 +1,22 @@
+<script>
+
+function calculateArea() {
+    let height = prompt("Enter height(postive number only):")
+    let width = prompt("Enter width (postive number only);")
+
+if (isNaN(width)  || isNaN(height) || width <= 0 || height <= 0) {
+    alert("Enter postive numbers.");
+    height = prompt("Enter height(postive number only)");
+    width = prompt("Enter width(postive number only");
+
+}
+
+let area = height * width;
+
+console.log(`The area of the rectangle is: ${area}`);
+
+
+
+}
+calculateArea();
+</script>
